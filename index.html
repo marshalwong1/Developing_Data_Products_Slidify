@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Project">
+  <meta name="author" content="Marshal Wong">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Project</h1>
+    <h2>Learning Machine Learning through Experimentation</h2>
+    <p>Marshal Wong<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Machine learning is one of the more complex aspects of data science.</li>
+<li>There are multiple prediction methods to use with multiple parameters available.</li>
+</ul>
+
+<p>This Shiny app allows beginning learners to &quot;play&quot; with some of the major 
+options in machine learning and (almost immediately) see the effect of changes
+to the options using the Titanic data publicly available from Kaggle.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Access and Usage</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Shiny app can be found at <a href="http://marshalwong.shinyapps.io/Developing_Data_Products/"><a href="http://marshalwong.shinyapps.io/Developing_Data_Products/">http://marshalwong.shinyapps.io/Developing_Data_Products/</a></a>.</p>
+
+<p>Currently, the app allows the user to select from the following options:</p>
+
+<ol>
+<li><p>Select the ratio of the data to use as the training set vs. the testing set</p></li>
+<li><p>Select the prediction modeling method (Trees vs. Random Forest)</p></li>
+<li><p>Select the resampling method (Bootstrapping vs. Cross-validation)</p></li>
+<li><p>For the selected resampling method, select the size parameter.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Usage Results ;-)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Since launching we have had incredible imaginary success with close to a million 
+unique visitors and averaging over 10,000 unique visits per day!</p>
+
+<pre><code class="r">require(ggplot2)
+uniqueVisitors &lt;- rpois(100, 10000)
+qplot(uniqueVisitors, binwidth=30) + geom_vline(xintercept = mean(uniqueVisitors))
+</code></pre>
+
+<p><img src="assets/fig/simple-plot.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Future Improvements</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Additional data sets</p></li>
+<li><p>Additional prediction models</p></li>
+<li><p>Additional resampling methods</p></li>
+<li><p>Visualizations</p></li>
+<li><p>Code samples</p></li>
+<li><p>Guided learning paths </p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Access and Usage'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Usage Results ;-)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Future Improvements'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

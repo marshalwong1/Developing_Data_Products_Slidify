@@ -1,0 +1,68 @@
+---
+title       : Developing Data Products Project
+subtitle    : Learning Machine Learning through Experimentation
+author      : Marshal Wong
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Motivation
+
+- Machine learning is one of the more complex aspects of data science.
+- There are multiple prediction methods to use with multiple parameters available.
+
+This Shiny app allows beginning learners to "play" with some of the major 
+options in machine learning and (almost immediately) see the effect of changes
+to the options using the Titanic data publicly available from Kaggle.
+
+--- 
+
+## Access and Usage
+
+The Shiny app can be found at <a href="http://marshalwong.shinyapps.io/Developing_Data_Products/">http://marshalwong.shinyapps.io/Developing_Data_Products/</a>.
+
+Currently, the app allows the user to select from the following options:
+
+1.  Select the ratio of the data to use as the training set vs. the testing set
+
+2.  Select the prediction modeling method (Trees vs. Random Forest)
+
+3.  Select the resampling method (Bootstrapping vs. Cross-validation)
+
+4.  For the selected resampling method, select the size parameter.
+
+---
+
+## Usage Results ;-)
+
+Since launching we have had incredible imaginary success with close to a million 
+unique visitors and averaging over 10,000 unique visits per day!
+
+```{r simple-plot, fig.height = 4, fig.align = 'center', message = F}
+require(ggplot2)
+uniqueVisitors <- rpois(100, 10000)
+qplot(uniqueVisitors, binwidth=30) + geom_vline(xintercept = mean(uniqueVisitors))
+```
+
+
+---
+
+## Future Improvements
+
+1.  Additional data sets
+
+2.  Additional prediction models
+
+3.  Additional resampling methods
+
+4.  Visualizations
+
+5.  Code samples
+
+6.  Guided learning paths 
+
